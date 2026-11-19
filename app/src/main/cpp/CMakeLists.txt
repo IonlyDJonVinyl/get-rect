@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.22.1)
+project(djmusb C)
+add_library(djmusb SHARED djmusb.c)
+target_compile_options(djmusb PRIVATE -Wall -Wextra -O2)
+target_link_libraries(djmusb log)
